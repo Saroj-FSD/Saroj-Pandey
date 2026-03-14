@@ -107,7 +107,7 @@ export default function Hero() {
                 initial={{ scale: 1.3 }}
                 animate={{ scale: 1.1 }}
                 transition={{ duration: 2, ease: [0.22, 1, 0.36, 1], delay: 0.5 }}
-                src="../public/images/saroj-p.jpg"
+                src="/images/saroj-p.jpg"
                 alt="saroj-p"
                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 group-hover:scale-100"
                 referrerPolicy="no-referrer"

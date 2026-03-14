@@ -92,7 +92,7 @@ export default function About() {
                 initial={{ scale: 1.2 }}
                 whileInView={{ scale: 1 }}
                 transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
-                src="../public/images/annapurna.jpg" 
+                src="/images/annapurna.jpg" 
                 alt="annapurna" 
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                 referrerPolicy="no-referrer"
