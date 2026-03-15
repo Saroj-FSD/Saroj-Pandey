@@ -50,7 +50,7 @@ export default function Navbar() {
             <div className="w-10 h-10 rounded-full overflow-hidden border border-foreground/10 group-hover:scale-110 transition-transform duration-500">
               <img 
                 src="/images/logo.jpg"
-                alt="logo" 
+                alt="logon" 
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all"
                 referrerPolicy="no-referrer"
               />

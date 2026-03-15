@@ -68,6 +68,31 @@ export default function Hero() {
           </motion.p>
 
           <motion.div
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ duration: 1, delay: 1.2 }}
+  className="flex items-center gap-6 mb-10 pl-40"
+>
+  {[
+    { icon: Github, href: "#" },
+    { icon: Linkedin, href: "#" },
+    { icon: Facebook, href: "https://www.facebook.com/i.am.saroj39/" },
+    { icon: Instagram, href: "https://www.instagram.com/i_am_sarojp/" },
+  ].map((social, i) => (
+    <a
+      key={i}
+      href={social.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-orange-700 hover:text-white transition-colors"
+    >
+      <social.icon className="w-5 h-5 md:w-6 md:h-6" />
+    </a>
+  ))}
+</motion.div>
+
+
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.9 }}
@@ -144,29 +169,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1.2 }}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 flex items-center gap-8"
-      >
-        {[
-          { icon: Github, href: "#" },
-          { icon: Linkedin, href: "#" },
-          { icon: Facebook, href: "https://www.facebook.com/i.am.saroj39/" },
-          { icon: Instagram, href: "https://www.instagram.com/i_am_sarojp/" },
-
-        ].map((social, i) => (
-          <a
-            key={i}
-            href={social.href}
-            className="text-orange-700 hover:text-white transition-colors"
-          >
-            <social.icon className="w-5 h-5" />
-          </a>
-        ))}
-      </motion.div>
-
+      
       {/* Scroll Indicator */}
       <motion.div
         animate={{ y: [0, 10, 0] }}
